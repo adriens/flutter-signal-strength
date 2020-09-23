@@ -19,11 +19,11 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    initPlatformState();
+    initSignalStrengthState();
   }
 
   // Platform messages are asynchronous, so we initialize in an async method.
-  Future<void> initPlatformState() async {
+  Future<void> initSignalStrengthState() async {
     int gsmSignalStrength;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
@@ -50,10 +50,10 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Flutter signal strength Plugin'),
         ),
         body: Center(
-          child: Text('Running on: ' + _gsmSignalStrength.toString()),
+          child: Text('Gsm signal Strength: ' + _gsmSignalStrength.toString()),
         ),
         floatingActionButton: FloatingActionButton(
-          onPressed: () { setState(() { initPlatformState(); });},
+          onPressed: () { setState(() { initSignalStrengthState(); });},
           child: Icon(Icons.refresh),
         ),
       ),
