@@ -18,6 +18,6 @@ void main() {
   });
 
   test('getPlatformVersion', () async {
-    expect(await FlutterSignalStrength.platformVersion, '42');
+    expect(await FlutterSignalStrength.gsmSignalStrength, 42);
   });
 }
