@@ -1,3 +1,4 @@
-## 0.0.1
+## 1.0.3
 
-* TODO: Describe initial release.
+* Publishing version
+* Get the signal strength from Android device (only)
