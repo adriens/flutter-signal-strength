@@ -1,8 +1,7 @@
 name: flutter_signal_strength
 description: A new flutter plugin project.
 version: 0.0.1
-author:
-homepage:
+homepage: https://github.com/adriens/flutter-signal-strength
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
@@ -29,8 +28,6 @@ flutter:
     platforms:
       android:
         package: nc.adriens.flutter_signal_strength
-        pluginClass: FlutterSignalStrengthPlugin
-      ios:
         pluginClass: FlutterSignalStrengthPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
